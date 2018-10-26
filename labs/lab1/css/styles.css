@@ -12,7 +12,7 @@ nav a { /*links with "nav" container */
     text-decoration: none; /*removes underline */
     color: white; /* by default, links are blue */
 }
-nav a .current {
+nav .activepage{
     color:red;
 }
 nav a:hover { /*pseudo class*/

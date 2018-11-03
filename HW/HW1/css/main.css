@@ -24,3 +24,7 @@ footer {
     font-size: .85em;
     clear: left;
 }
+a:link {
+    color: white;
+}
+/* need 6 more*/

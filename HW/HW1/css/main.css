@@ -27,4 +27,12 @@ footer {
 a:link {
     color: white;
 }
-/* need 6 more*/
+p {
+    text-align:center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#navhead {
+     width:50%;
+}
+/* need 2 more*/

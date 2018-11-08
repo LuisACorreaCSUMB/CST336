@@ -1,0 +1,57 @@
+    body{
+        opacity:0.9;
+        width:100%;
+        text-align:center;
+        color:blue;
+    }
+    
+    input {
+        font-size: 3em;
+        color: black;
+    }
+    
+    #carousel-example-generic {
+         margin: 0 auto;   
+         width: 700px;
+    }
+    ol, li {
+        list-style-type: none;
+    }
+    .carousel-inner {
+        position:relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+    #category {
+        font: 1.5em;
+    }
+    #keyword {
+        font-size: 1.5em;
+        border-radius: 20px;
+    }
+    #layoutDiv {
+        display: inline-block;
+        background-color: grey;
+        padding: 15px;
+        border-radius: 5px;
+        
+    }
+    #errorSubmit {
+        font-size: 3em;
+        color: white;
+    }
+    .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: 999px;
+        
+    }
+    .carousel {
+        position: relative;
+    }

@@ -15,21 +15,5 @@ else if ($keyword =="") {
     $keyword = $category;
 
 }
-if ($layout = "horizontal"){
-    #carousel-example-generic.css('display':'inline-block')
-}
-
-//else{
-//}
-
-
-
-
-
-
-
-
-
-
 
 ?>

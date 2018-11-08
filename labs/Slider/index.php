@@ -4,12 +4,12 @@
     include 'inc/functions.php';
 
     //API call goes here
-    if (isset($_GET['keyword'])) {
-        include 'api/pixabayAPI.php';
-        $imageURLs = getImageURLs($_GET['keyword']);
-        $backgroundImage = $imageURLs[array_rand($imageURLs)];
-        
-        echo "You searched for: " . $_GET['keyword'];
+    if($error == false){
+        if (isset($_GET['keyword']) or isset($_GET['category'])) {
+            include 'api/pixabayAPI.php';
+            $imageURLs = getImageURLs($keyword);
+            $backgroundImage = $imageURLs[array_rand($imageURLs)];
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -17,15 +17,14 @@
     
     <head>
         <title>Image Carousel</title>
-        <meta charset="utf-8";
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8";>
+        <!-- Bootstrap links -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       
         <style>
             @import url("css/styles.css");
             body {
                 background-image: url(<?=$backgroundImage?>);
-                background-attachment: fixed;
                 background-size:100% 100%;
             }
         </style>
@@ -46,7 +45,7 @@
             <!-- Indicators Here -->
             <ol class="carousel-indicators">
                 <?php
-                    for ($i = 0; $i < 5; $i++) {
+                    for ($i = 0; $i < 7; $i++) {
                         echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
                         echo ($i===0)?" class='active'": "";
                         echo "></li>";
@@ -62,7 +61,7 @@
                         }
                         while (!isset($imageURLs[$randomIndex]));
                         
-                        echo '<div class="item';
+                        echo '<div class="carousel-item';
                         echo ($i===0)?" active": "";
                         echo '">';
                         echo '<img src="' . $imageURLs[$randomIndex] . '">';
@@ -83,7 +82,7 @@
              </a>
         </div>
         <?php
-            }
+            }//end of the Else Statement
         ?>
         <br>
         <!-- HTML form goes here! -->
@@ -91,7 +90,7 @@
             <input type="text" name="keyword" placeholder="Keyword" value="<?=$_GET['keyword']?>"/>
             <br><br>
             <div id='layoutDiv'>
-                <input type="radio" id = "lhorizontal" name="layout" value="horizontal" checked>
+                <input type="radio" id = "lhorizontal" name="layout" value="horizontal">
                 <label for = "Horizontal"></label><label for="lhorizontal"> Horizontal </label>
                 <input type="radio" id = "lvertical" name="layout" value="vertical">
                 <label for = "Vertical"></label><label for="lvertical"> Vertical </label>
@@ -100,15 +99,16 @@
             <select name = "category">
                 <option value>Select One</option>
                 <option value="cars">Cars</option>
-                <option>Skateboards</option>
-                <option>Bikes</option>
-                <option>Planes</option>
-                <option>Boats</option>
+                <option value="skateboards">Skateboards</option>
+                <option value="bikes">Bikes</option>
+                <option value="planes">Planes</option>
+                <option value="boats">Boats</option>
             </select>
             <br>
             <input type="submit" value="Submit" />
         </form>
         <br/> <br/>
-    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
 </html>

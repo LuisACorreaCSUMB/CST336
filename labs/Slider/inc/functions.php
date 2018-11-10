@@ -3,6 +3,7 @@
 $keyword = "";
 $category = "";
 $error = false;
+$keyword =$_GET["keyword"];
 $category = $_GET["category"];
 $layout = $_GET["layout"];
 

@@ -52,7 +52,7 @@ function displayCart() {
             echo "<td><h4>" . $item['name'] . "</h4></td>";
             echo "<td><h4>$" . $item['price'] . "</h4></td>";
             
-            echo 'form method = "post">';
+            echo '<form method = "post">';
             echo "<input type='hidden' name='itemId' value='$itemId'>";
             echo "<td><input type='text' name='update' class='form-control' placeholder='$itemQuant'></td>";
             echo '<td><button class="btn btn-danger">Update</button></td>';

@@ -25,7 +25,7 @@
     
         
         foreach ($_SESSION['cart'] as &$item) {
-            if($newItem["id"] == $item["id"]) {
+            if($newItem['id'] == $item['id']) {
                 $item['quantity'] += 1;
                 $found = true;
             }

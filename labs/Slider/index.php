@@ -55,16 +55,22 @@
             <!-- Wrapper for Images -->
             <div class="carousel-inner" role="listbox">
                 <?php
+                    $layout = $_GET["layout"];
+                    echo $layout;
                     for($i = 0; $i < 7; $i++) {
                         do { 
                             $randomIndex = rand(0, count($imageURLs));
                         }
                         while (!isset($imageURLs[$randomIndex]));
-                        
                         echo '<div class="carousel-item';
                         echo ($i===0)?" active": "";
                         echo '">';
-                        echo '<img src="' . $imageURLs[$randomIndex] . '">';
+                        if($layout == vertical){
+                            echo '<img src="' . $imageURLs[$randomIndex] . '" width=460px height=640px>';
+                        }
+                        else{
+                            echo '<img src="' . $imageURLs[$randomIndex] . '" height= 460px width= 640px>';
+                        }
                         echo '</div>';
                         unset($imageURLs[$randomIndex]);
                     }

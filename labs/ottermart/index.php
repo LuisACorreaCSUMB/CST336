@@ -31,8 +31,12 @@
             
             if(!empty($_GET['product'])) 
             {
+                //error here
                 $sql .= "AND productName LIKE :productName";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
+                
+                $sql .= "AND productDescription LIKE :productDescription";
+                $namedParameters[":productDescription"] = $_GET['product'];
             }
             if(!empty($_GET['category']))
             {
@@ -68,6 +72,7 @@
             foreach ($records as $record) 
             {
                 echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a>";
+                
                 echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
             }
         

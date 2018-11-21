@@ -35,7 +35,7 @@
                 $sql .= "AND productName LIKE :productName";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
                 
-                $sql .= "AND productDescription LIKE :productDescription";
+                $sql .= "OR productDescription LIKE :productDescription";
                 $namedParameters[":productDescription"] = $_GET['product'];
             }
             if(!empty($_GET['category']))

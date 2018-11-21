@@ -3113,3 +3113,15 @@
 [18-Nov-2018 21:14:20 UTC] PHP Stack trace:
 [18-Nov-2018 21:14:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/scart/scart.php:0
 [18-Nov-2018 21:14:20 UTC] PHP   2. displayCart() /home/ubuntu/workspace/CST336/labs/scart/scart.php:53
+[21-Nov-2018 07:04:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(65): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(112): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 65
+[21-Nov-2018 07:05:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productName LIKE '%test%'' at line 1' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(65): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(117): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 65

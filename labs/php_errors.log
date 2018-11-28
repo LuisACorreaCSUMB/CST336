@@ -3186,3 +3186,69 @@ Stack trace:
 #1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(123): displaySearchResults()
 #2 {main}
   thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 69
+[21-Nov-2018 07:54:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:69
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(69): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(124): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 69
+[21-Nov-2018 07:54:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:69
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(69): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(124): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 69
+[21-Nov-2018 07:55:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[21-Nov-2018 07:55:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:03:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:04:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:04:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:07:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productName LIKE '%iphone%' OR productDescription LIKE '%iphone%'' at line 1' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:07:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productName LIKE '%iphone%' OR productDescription LIKE '%iphone%'' at line 1' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:07:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productName LIKE '%iphone%' OR productDescription LIKE '%iphone%'' at line 1' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[24-Nov-2018 03:08:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productName LIKE '%iphone%'' at line 1' in /home/ubuntu/workspace/CST336/labs/ottermart/index.php:70
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(70): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70

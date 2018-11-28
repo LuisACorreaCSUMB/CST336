@@ -6,14 +6,14 @@
     function displayCategories() {
         global $conn;
         
-        $sql = "SELECT catID, catName from om_category ORDER BY catName";
+        $sql = "SELECT catId, catName from om_category ORDER BY catName";
         
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         foreach ($records as $record) {
-            echo "<option value=''".$record["catId"]."' >" . $record["catName"] . "</option>";
+            echo "<option value='".$record["catId"]."' >" . $record["catName"] . "</option>";
         }
     }
     
@@ -32,14 +32,15 @@
             if(!empty($_GET['product'])) 
             {
                 //error here
-                $sql .= "AND productName LIKE :productName";
+
+                $sql .= " AND productName LIKE :productName";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
-                
-                $sql .= "OR productDescription LIKE :productDescription";
+                $sql .= " OR productDescription LIKE :productDescription";
                 $namedParameters[":productDescription"] = "%" . $_GET['product'] . "%";
             }
             if(!empty($_GET['category']))
             {
+                
                 $sql .= " AND catId = :categoryId";
                 $namedParameters[":categoryId"] = $_GET['category'];
             }
@@ -71,7 +72,7 @@
             
             foreach ($records as $record) 
             {
-                echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a>";
+                echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a><br>";
                 
                 echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
             }
@@ -120,6 +121,8 @@
         </div>
         
         <br>
+        <div id='resultsDisplay'>
         <?= displaySearchResults() ?>
+        </div>
     </body>
 </html>

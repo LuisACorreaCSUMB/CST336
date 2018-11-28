@@ -19,10 +19,7 @@
             </header>
             
             <div id="word"></div>
-            <div id="letters">
-                <input type="text" id="letterBox">
-                <button id="letterBtn">Submit</button>
-            </div>
+            <div id="letters"></div>
             
             <div id="man">
                 <img src="img/stick_0.png" id="hangImg">
@@ -36,25 +33,7 @@
             <h2>You Lost!</h2>
             <button class="replayBtn btn btn-success">Play Again</button>
         </div>
-            <!--
-            <script language='javascript'>
-                $("#letterBtn").click(function(){
-                    var boxVal = $("#letterBox").val();
-                    console.log("You pressed the button and it had the value: " + boxVal); 
-                });
-                
-                $(".letter").click(function(){ 
-                    checkLetter($(this).attr("id"));
-                });
-                $(".replayBtn").on("click", function(){
-                    location.reload();
-                });
-                $(".letter").click(function(){
-                    checkLetter($(this).attr("id"));
-                    disableButton($(this));
-                });
-        </script>
-        -->
+
         <script type="text/javascript" src="js/hangman.js"></script>
     </body>
 </html>

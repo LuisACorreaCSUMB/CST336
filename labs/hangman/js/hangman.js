@@ -9,8 +9,23 @@ var words = [{word: "snake", hint: "It's a reptile"}, {word: "monkey", hint: "It
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
                 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
                 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+                
+                
 window.onload = startGame();
 
+
+$(".letter").click(function(){
+    checkLetter($(this).attr("id"));
+    disableButton($(this));
+});
+
+$(".replayBtn").on("click", function(){
+    location.reload();
+});
+
+                
+                
+                
 function startGame(){
     pickWord();
     initBoard();
@@ -67,8 +82,8 @@ function checkLetter(letter) {
     
     for(var i= 0; i < selectedWord.length; i++) {
         console.log(selectedWord)
-        if(letter== selectedWord[i]) {
-            positions.push[i];
+        if(letter == selectedWord[i]) {
+            positions.push(i);
         }
     }
     if(positions.length > 0) {

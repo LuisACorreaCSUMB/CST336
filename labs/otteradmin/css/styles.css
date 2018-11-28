@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+}
+h1 {
+    text-align: Center;
+}
+form{
+    text-align:center;
+    
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+#resultsDisplay {
+    background:white;
+    margin-left: 100px;
+    margin-right: 100px;
+}

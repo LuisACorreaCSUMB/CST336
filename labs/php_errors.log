@@ -3252,3 +3252,102 @@ Stack trace:
 #1 /home/ubuntu/workspace/CST336/labs/ottermart/index.php(125): displaySearchResults()
 #2 {main}
   thrown in /home/ubuntu/workspace/CST336/labs/ottermart/index.php on line 70
+[28-Nov-2018 04:22:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php(19): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php on line 19
+[28-Nov-2018 04:23:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php(19): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php on line 19
+[28-Nov-2018 04:23:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php(19): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php on line 19
+[28-Nov-2018 04:23:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php(19): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/loginProcess.php on line 19
+[28-Nov-2018 04:41:01 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 40
+[28-Nov-2018 04:41:01 UTC] PHP Stack trace:
+[28-Nov-2018 04:41:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:0
+[28-Nov-2018 04:41:01 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:40
+[28-Nov-2018 04:41:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(40): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 40
+[28-Nov-2018 04:41:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(40): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 40
+[28-Nov-2018 04:44:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(40): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 40
+[28-Nov-2018 04:46:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 43
+[28-Nov-2018 04:48:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productDescription' cannot be null' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 43
+[28-Nov-2018 04:48:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productDescription' cannot be null' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 43
+[28-Nov-2018 04:48:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productDescription' cannot be null' in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/addProduct.php on line 43
+[28-Nov-2018 04:57:17 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:57:17 UTC] PHP Stack trace:
+[28-Nov-2018 04:57:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:58:46 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:58:46 UTC] PHP Stack trace:
+[28-Nov-2018 04:58:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:58:49 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:58:49 UTC] PHP Stack trace:
+[28-Nov-2018 04:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:58:52 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:58:52 UTC] PHP Stack trace:
+[28-Nov-2018 04:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:59:30 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:59:30 UTC] PHP Stack trace:
+[28-Nov-2018 04:59:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:59:31 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:59:31 UTC] PHP Stack trace:
+[28-Nov-2018 04:59:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 04:59:35 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 21
+[28-Nov-2018 04:59:35 UTC] PHP Stack trace:
+[28-Nov-2018 04:59:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 05:02:47 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 40
+[28-Nov-2018 05:02:47 UTC] PHP Stack trace:
+[28-Nov-2018 05:02:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 05:02:47 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 40
+[28-Nov-2018 05:02:47 UTC] PHP Stack trace:
+[28-Nov-2018 05:02:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 05:02:50 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 40
+[28-Nov-2018 05:02:50 UTC] PHP Stack trace:
+[28-Nov-2018 05:02:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 05:03:00 UTC] PHP Fatal error:  Call to undefined function getCategories() in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 40
+[28-Nov-2018 05:03:00 UTC] PHP Stack trace:
+[28-Nov-2018 05:03:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:0
+[28-Nov-2018 05:12:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'productImage = ''
+                    price = '14'
+                    catId = '' at line 4' in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php(65): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 65

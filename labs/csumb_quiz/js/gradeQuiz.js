@@ -37,20 +37,20 @@ $(document).ready(function(){
         $("#question2-feedback").append("The answer is <strong>Monte Ray</strong>");
         // Question 3
         if(answer3 === "B") {
-            correctAnswer($("#question2-feedback"));
+            correctAnswer($("#question3-feedback"));
         }
         else {
-            incorrectAnswer($("#question2-feedback"));
+            incorrectAnswer($("#question3-feedback"));
         }
-        $("#question2-feedback").append("The answer is <strong>Seaside</strong>");
+        $("#question3-feedback").append("The answer is <strong>Seaside</strong>");
         // Question 4
         if(answer4 === "A") {
-            correctAnswer($("#question2-feedback"));
+            correctAnswer($("#question4-feedback"));
         }
         else {
-            incorrectAnswer($("#question2-feedback"));
+            incorrectAnswer($("#question4-feedback"));
         }
-        $("#question2-feedback").append("The answer is <strong>Software Engineering</strong>");
+        $("#question4-feedback").append("The answer is <strong>Software Engineering</strong>");
         //Displays quiz score
         $("#score").html(score);
         $("#waiting").html("<img src='img/loading.gif' alt='submitting data' />");

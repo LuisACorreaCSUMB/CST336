@@ -3351,3 +3351,6 @@ Stack trace:
 #0 /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php(65): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/CST336/labs/otteradmin/updateProduct.php on line 65
+[05-Dec-2018 07:31:09 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/CST336/labs/csumb_quiz/index.php on line 11
+[05-Dec-2018 08:06:43 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/CST336/labs/csumb_quiz/index.php on line 11
+[05-Dec-2018 08:06:44 UTC] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/CST336/labs/csumb_quiz/index.php on line 11

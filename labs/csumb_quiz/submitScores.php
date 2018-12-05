@@ -5,7 +5,7 @@ include 'connect.php';
 $connect = getDBConnection();
 
 $score = $_POST['score'];
-
+//Adding new score to database
 $sql = "INSERT INTO scores (username, score)
         VALUES (:username, :score)";
 $data = array(
@@ -14,7 +14,7 @@ $data = array(
 );
 $stmt = $connect->prepare($sql);
 $stmt->execute($data);
-//Adding new score to database
+//Retrieving total times quiz has been submitted and average score for this user
 $sql = "SELECT count(1) times, avg(score) average
         FROM scores
         WHERE username = :username";
@@ -23,7 +23,7 @@ $stmt->execute(array(":username"=>$_SESSION['username']));
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 echo json_encode($result);
-//Retrieving total times quiz has been submitted and average score for this user
+
 
 //Encoding data using JSON
 

@@ -16,7 +16,7 @@ if(isset($user['username'])){
     $_SESSION['username'] = $user['username'];
     header('Location: index.php');
 } else {
-    echo "The values youu entered were incorrect.
+    echo "The values you entered were incorrect.
     <a href='login.php' >Retry</a>";
 }
 ?>

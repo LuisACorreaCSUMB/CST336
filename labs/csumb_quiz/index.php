@@ -8,9 +8,7 @@ function displayQuiz(){
         header("Location: login.php");
     }
 }
-$("#logoutBtn").click( function(){
-    window.location.href="logout.php";
-});
+
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +23,11 @@ $("#logoutBtn").click( function(){
         <div class="user-menu">
             <?php echo "Welcome ".$_SESSION['username']."! ";?> 
             <input type="button" id="logoutBtn" value="Logout" />
-            
+            <!--<script>
+            $("#logoutBtn").click( function(){
+                window.location.href="logout.php";
+            });
+            </script>-->
         </div>
         <div class="content-wrapper">
             <!--Display Quiz Content-->
@@ -48,7 +50,8 @@ $("#logoutBtn").click( function(){
         </div>
         
         <!--Javascript files-->
-        <script type="text/javascript" src="js/gradeQuiz.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/gradeQuiz.js"></script>
     </body>
 </html>
